@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="940.0" prefWidth="1164.0" style="-fx-background-color: #eee;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.OrderDetailFormController">
+   <children>
+      <AnchorPane layoutX="13.0" layoutY="110.0" prefHeight="800.0" prefWidth="1139.0" style="-fx-background-color: white;">
+         <children>
+            <TableView fx:id="tblOrderDetails" layoutX="9.0" layoutY="80.0" prefHeight="713.0" prefWidth="1121.0">
+               <columns>
+                  <TableColumn fx:id="colId" prefWidth="177.0" text="Order Id" />
+                  <TableColumn fx:id="colCode" prefWidth="187.0" text="Item Code" />
+                  <TableColumn fx:id="colDescription" prefWidth="294.0" text="Description" />
+                  <TableColumn fx:id="colQty" prefWidth="199.0" text="Qty" />
+                  <TableColumn fx:id="colTotal" prefWidth="263.0" text="Total" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="39.0" layoutY="80.0" prefHeight="82.0" prefWidth="1087.0" style="-fx-background-color: #ff9800;">
+         <children>
+            <Label layoutX="28.0" layoutY="25.0" text="Order Details" textFill="WHITE">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

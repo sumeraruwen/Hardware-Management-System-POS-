@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="cashierContext" prefHeight="940.0" prefWidth="1164.0" style="-fx-background-color: #eee;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddCashierFormController">
+   <children>
+      <AnchorPane layoutX="143.0" layoutY="150.0" prefHeight="619.0" prefWidth="898.0" style="-fx-background-color: white;">
+         <children>
+            <JFXButton fx:id="btnAddCashier" layoutX="87.0" layoutY="523.0" onAction="#btnAddCashierOnAction" prefHeight="47.0" prefWidth="163.0" style="-fx-background-color: #fc5c4b;" text="ADD CASHIER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXTextField fx:id="txtPassword" labelFloat="true" layoutX="87.0" layoutY="438.0" onKeyReleased="#txt_Key_Released" prefHeight="47.0" prefWidth="725.0" promptText="Password *">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtAddress" labelFloat="true" layoutX="87.0" layoutY="336.0" onKeyReleased="#txt_Key_Released" prefHeight="47.0" prefWidth="725.0" promptText="Address *">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtName" labelFloat="true" layoutX="87.0" layoutY="231.0" onKeyReleased="#txt_Key_Released" prefHeight="47.0" prefWidth="725.0" promptText="Cashier Name *">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtId" labelFloat="true" layoutX="87.0" layoutY="128.0" onAction="#txtSearchOnAction" onKeyReleased="#txt_Key_Released" prefHeight="47.0" prefWidth="725.0" promptText="Cashier Id *">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton layoutX="275.0" layoutY="523.0" onAction="#btnViewCashierOnAction" prefHeight="47.0" prefWidth="163.0" style="-fx-background-color: #fc5c4b;" text="VIEW CASHIERS" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="462.0" layoutY="523.0" onAction="#btnUpdateCashierOnAction" prefHeight="47.0" prefWidth="163.0" style="-fx-background-color: #fc5c4b;" text="UPDATE CASHIER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="649.0" layoutY="523.0" onAction="#btnDeleteCashierOnAction" prefHeight="47.0" prefWidth="163.0" style="-fx-background-color: #fc5c4b;" text="DELETE CASHIER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="180.0" layoutY="118.0" prefHeight="104.0" prefWidth="827.0" style="-fx-background-color: #fc5c4b;">
+         <children>
+            <Label layoutX="29.0" layoutY="19.0" text="Cashier Form" textFill="WHITE">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="29.0" layoutY="57.0" opacity="0.72" text="Enter the details" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

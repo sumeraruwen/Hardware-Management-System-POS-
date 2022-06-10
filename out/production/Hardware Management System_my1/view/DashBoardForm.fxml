@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="940.0" prefWidth="1500.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashBoardFormController">
+   <children>
+      <AnchorPane layoutY="-3.0" prefHeight="940.0" prefWidth="326.0" style="-fx-background-color: #ffffff;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <JFXButton layoutX="26.0" layoutY="792.0" onAction="#btnViewVehicleOnAction" prefHeight="58.0" prefWidth="274.0" text="View Vehicles">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="26.0" layoutY="183.0" onAction="#btnOrderDetailsOnAction" prefHeight="58.0" prefWidth="274.0" text="Order Details">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="26.0" layoutY="337.0" onAction="#btnAddItemOnAction" prefHeight="58.0" prefWidth="274.0" text="Add Items">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="26.0" layoutY="412.0" onAction="#btnViewItemOnAction" prefHeight="58.0" prefWidth="274.0" text="View Items">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="26.0" layoutY="485.0" onAction="#btnAddVehicleOnAction" prefHeight="58.0" prefWidth="274.0" text="Add Vehicles">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="26.0" layoutY="561.0" onAction="#btnAddDriverOnAction" prefHeight="58.0" prefWidth="274.0" text="Add Drivers">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="26.0" layoutY="638.0" onAction="#btnAddSupplierOnAction" prefHeight="58.0" prefWidth="274.0" text="Add Suppliers">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="26.0" layoutY="718.0" onAction="#btnViewSupplierOnAction" prefHeight="58.0" prefWidth="274.0" text="View Suppliers">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="26.0" layoutY="259.0" onAction="#btnViewDriverOnAction" prefHeight="58.0" prefWidth="274.0" text="View Drivers">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </JFXButton>
+            <FontAwesomeIconView fill="#cdc1c1" glyphName="USER_PLUS" layoutX="52.0" layoutY="677.0" size="25" />
+            <FontAwesomeIconView fill="#cdc1c1" glyphName="USER_PLUS" layoutX="52.0" layoutY="598.0" size="25" />
+            <FontAwesomeIconView fill="#cdc1c1" glyphName="CAR" layoutX="52.0" layoutY="522.0" size="25" />
+            <FontAwesomeIconView fill="#cdc1c1" glyphName="SHOPPING_CART" layoutX="52.0" layoutY="220.0" size="25" />
+            <FontAwesomeIconView fill="#cdc1c1" glyphName="USER" layoutX="53.0" layoutY="761.0" size="25" text="" />
+            <FontAwesomeIconView fill="#cdc1c1" glyphName="PLUS" layoutX="73.0" layoutY="505.0" size="15" />
+            <FontAwesomeIconView fill="#cdc1c1" glyphName="CAR" layoutX="48.0" layoutY="831.0" size="25" text="" />
+            <FontAwesomeIconView fill="#cdc1c1" glyphName="LIST_ALT" layoutX="54.0" layoutY="451.0" size="25" text="" />
+            <FontAwesomeIconView fill="#cdc1c1" glyphName="ARCHIVE" layoutX="51.0" layoutY="374.0" size="25" text="" />
+            <FontAwesomeIconView fill="#cdc1c1" glyphName="PLUS" layoutX="73.0" layoutY="357.0" size="15" />
+            <FontAwesomeIconView fill="#cdc1c1" glyphName="LIST_ALT" layoutX="54.0" layoutY="298.0" size="25" text="" />
+            <Label layoutX="103.0" layoutY="37.0" prefHeight="43.0" prefWidth="120.0" text="DELUXE" textFill="#ff9800">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="26.0" layoutY="868.0" onAction="#btnAddCashierOnAction" prefHeight="58.0" prefWidth="274.0" text="Cashiers">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="26.0" layoutY="107.0" onAction="#DashBoardOnAction" prefHeight="58.0" prefWidth="274.0" style="-fx-background-color: #fc5c4b;" text="Dashboard" textFill="WHITE">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </JFXButton>
+            <FontAwesomeIconView fill="WHITE" glyphName="TH_LARGE" layoutX="54.0" layoutY="144.0" size="25" />
+            <FontAwesomeIconView fill="#cdc1c1" glyphName="USER_PLUS" layoutX="52.0" layoutY="907.0" size="25" text="" />
+         </children>
+      </AnchorPane>
+      <Separator layoutX="26.0" layoutY="93.0" prefHeight="4.0" prefWidth="274.0" />
+      <AnchorPane fx:id="dashBoardFormContext" layoutX="326.0" layoutY="-3.0" prefHeight="940.0" prefWidth="1164.0" />
+   </children>
+   <effect>
+      <DropShadow />
+   </effect>
+</AnchorPane>

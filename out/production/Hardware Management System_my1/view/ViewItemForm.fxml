@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="940.0" prefWidth="1164.0" style="-fx-background-color: #eee;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ViewItemFormController">
+   <children>
+      <AnchorPane layoutX="11.0" layoutY="117.0" prefHeight="800.0" prefWidth="1139.0" style="-fx-background-color: white;">
+         <children>
+            <TableView fx:id="tblItems" layoutX="9.0" layoutY="80.0" prefHeight="713.0" prefWidth="1121.0">
+              <columns>
+                <TableColumn fx:id="colCode" prefWidth="193.00003051757812" text="Item Code " />
+                <TableColumn fx:id="colId" prefWidth="211.0" text="Supplier Id" />
+                  <TableColumn fx:id="colDescription" prefWidth="281.0" text="Description" />
+                  <TableColumn fx:id="colQtyHand" prefWidth="201.0" text="Qty On Hand" />
+                  <TableColumn fx:id="colPrice" prefWidth="232.0" text="Unit Price" />
+                  <TableColumn minWidth="6.0" prefWidth="6.0" text="Option" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="37.0" layoutY="87.0" prefHeight="82.0" prefWidth="1087.0" style="-fx-background-color: #fc5c4b;">
+         <children>
+            <Label layoutX="28.0" layoutY="25.0" text="View Products" textFill="WHITE">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

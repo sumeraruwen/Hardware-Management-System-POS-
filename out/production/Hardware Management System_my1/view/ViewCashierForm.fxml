@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="940.0" prefWidth="1164.0" style="-fx-background-color: #eee;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ViewCashierFormController">
+   <children>
+      <AnchorPane layoutX="13.0" layoutY="126.0" prefHeight="800.0" prefWidth="1139.0" style="-fx-background-color: white;">
+         <children>
+            <TableView fx:id="tblCashiers" layoutX="9.0" layoutY="80.0" prefHeight="713.0" prefWidth="1121.0">
+               <columns>
+                  <TableColumn fx:id="colId" prefWidth="228.0" text="Cashier Id" />
+                  <TableColumn fx:id="colName" prefWidth="313.0" text="Cashier Name" />
+                  <TableColumn fx:id="colAddress" prefWidth="318.0" text="Address" />
+                  <TableColumn fx:id="colPassword" prefWidth="260.0" text="Password" />
+                  <TableColumn minWidth="1.0" prefWidth="1.0" text="Option" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="39.0" layoutY="96.0" prefHeight="82.0" prefWidth="1087.0" style="-fx-background-color: #fc5c4b;">
+         <children>
+            <Label layoutX="28.0" layoutY="25.0" text="View Cashiers" textFill="WHITE">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

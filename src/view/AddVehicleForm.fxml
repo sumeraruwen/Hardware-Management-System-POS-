@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="940.0" prefWidth="1164.0" style="-fx-background-color: #eee;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddVehicleFormController">
+   <children>
+      <AnchorPane layoutX="133.0" layoutY="169.0" prefHeight="619.0" prefWidth="898.0" style="-fx-background-color: white;">
+         <children>
+            <JFXButton fx:id="btnAddVehicle" layoutX="87.0" layoutY="523.0" onAction="#btnAddVehicleOnAction" prefHeight="47.0" prefWidth="163.0" style="-fx-background-color: #fc5c4b;" text="ADD VEHICLE" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXTextField fx:id="txtWeight" labelFloat="true" layoutX="87.0" layoutY="438.0" onKeyReleased="#txt_Key_Released" prefHeight="47.0" prefWidth="725.0" promptText="Maximum Weight *">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtType" labelFloat="true" layoutX="87.0" layoutY="335.0" onKeyReleased="#txt_Key_Released" prefHeight="47.0" prefWidth="725.0" promptText="Vehicle Type *">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtNumber" labelFloat="true" layoutX="87.0" layoutY="231.0" onKeyReleased="#txt_Key_Released" prefHeight="47.0" prefWidth="725.0" promptText="Vehicle Number *">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtId" labelFloat="true" layoutX="87.0" layoutY="128.0" onAction="#txtSearchOnAction" onKeyReleased="#txt_Key_Released" prefHeight="47.0" prefWidth="725.0" promptText="Vehicle Id *">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton layoutX="273.0" layoutY="523.0" onAction="#btnUpdateVehicleOnAction" prefHeight="47.0" prefWidth="163.0" style="-fx-background-color: #fc5c4b;" text="UPDATE VEHICLE" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="457.0" layoutY="523.0" onAction="#btnDeleteVehicleOnAction" prefHeight="47.0" prefWidth="163.0" style="-fx-background-color: #fc5c4b;" text="DELETE VEHICLE" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="170.0" layoutY="137.0" prefHeight="104.0" prefWidth="827.0" style="-fx-background-color: #fc5c4b;">
+         <children>
+            <Label layoutX="29.0" layoutY="19.0" text="Add Vehicles" textFill="WHITE">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="29.0" layoutY="57.0" opacity="0.72" text="Enter the details" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Circle fill="WHITE" layoutX="1011.0" layoutY="55.0" radius="27.0" stroke="WHITE" strokeType="INSIDE" />
+      <JFXTextField layoutX="785.0" layoutY="25.0" opacity="0.54" prefHeight="39.0" prefWidth="201.0" promptText="Search...">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <FontAwesomeIconView fill="#9e9999" glyphName="SEARCH" layoutX="1002.0" layoutY="63.0" opacity="0.64" size="21" text="" />
+      <FontAwesomeIconView fill="#514f4f" glyphName="TH_LARGE" layoutX="1061.0" layoutY="64.0" size="25" text="" />
+      <FontAwesomeIconView fill="#514f4f" glyphName="SIGN_OUT" layoutX="1111.0" layoutY="64.0" size="25" />
+      <JFXButton layoutX="1053.0" layoutY="39.0" prefHeight="28.0" prefWidth="40.0" />
+      <JFXButton layoutX="1103.0" layoutY="40.0" onAction="#btnSignOutOnAction" prefHeight="28.0" prefWidth="40.0" />
+      <JFXButton layoutX="997.0" layoutY="40.0" prefHeight="21.0" prefWidth="19.0" />
+   </children>
+</AnchorPane>
